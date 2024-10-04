@@ -1,0 +1,1167 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 63;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		047062A02C9F96720022FA25 /* VoteManager.swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0470629F2C9F966E0022FA25 /* VoteManager.swift.swift */; };
+		047062C92CB06D120022FA25 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 047062C82CB06D120022FA25 /* GoogleService-Info.plist */; };
+		049DB1752C9D1723001E8281 /* Proposal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049DB1742C9D1723001E8281 /* Proposal.swift */; };
+		049DB1772C9D1D3F001E8281 /* PaymentSetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049DB1762C9D1D3F001E8281 /* PaymentSetupView.swift */; };
+		3C95CE572C95313E0056EA81 /* FirebaseFirestoreCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 3C95CE562C95313E0056EA81 /* FirebaseFirestoreCombine-Community */; };
+		3C9E28BD2C728AAD00D577C1 /* JobListing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9E28BC2C728AAD00D577C1 /* JobListing.swift */; };
+		3C9E28C12C728ADD00D577C1 /* saveJobListing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9E28C02C728ADD00D577C1 /* saveJobListing.swift */; };
+		3C9E28C52C728AFE00D577C1 /* getJobListing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9E28C42C728AFE00D577C1 /* getJobListing.swift */; };
+		3C9E28C82C729AFE00D577C1 /* PostJobView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9E28C72C729AFE00D577C1 /* PostJobView.swift */; };
+		3C9E28CA2C729B2A00D577C1 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9E28C92C729B2A00D577C1 /* ImagePicker.swift */; };
+		3C9E28CC2C729B9900D577C1 /* JobListingDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9E28CB2C729B9900D577C1 /* JobListingDetailsView.swift */; };
+		3C9E28CE2C729BD700D577C1 /* ProposalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9E28CD2C729BD700D577C1 /* ProposalView.swift */; };
+		3C9E28D02C72A72F00D577C1 /* LocationPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9E28CF2C72A72F00D577C1 /* LocationPickerView.swift */; };
+		3C9E28D22C72A81700D577C1 /* IdentifiableMapItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9E28D12C72A81700D577C1 /* IdentifiableMapItem.swift */; };
+		3C9E28D62C72BB4200D577C1 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9E28D52C72BB4200D577C1 /* LocationManager.swift */; };
+		3CB416FA2C95105B005DB275 /* startPaymentFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB416F92C95105B005DB275 /* startPaymentFlow.swift */; };
+		3CB993CC2C90AEF200B8DB7F /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = 3CB993CB2C90AEF200B8DB7F /* FirebaseAnalyticsOnDeviceConversion */; };
+		3CB993CE2C90AEF200B8DB7F /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = 3CB993CD2C90AEF200B8DB7F /* FirebaseAnalyticsWithoutAdIdSupport */; };
+		3CB993D02C90AEF200B8DB7F /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = 3CB993CF2C90AEF200B8DB7F /* FirebaseAppCheck */; };
+		3CB993D22C90AEF200B8DB7F /* FirebaseAppDistribution-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 3CB993D12C90AEF200B8DB7F /* FirebaseAppDistribution-Beta */; };
+		3CB993D42C90AEF200B8DB7F /* FirebaseAuthCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 3CB993D32C90AEF200B8DB7F /* FirebaseAuthCombine-Community */; };
+		3CB993D62C90AEF200B8DB7F /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 3CB993D52C90AEF200B8DB7F /* FirebaseCrashlytics */; };
+		3CB993D82C90AEF200B8DB7F /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 3CB993D72C90AEF200B8DB7F /* FirebaseDatabase */; };
+		3CB993DA2C90AEF200B8DB7F /* FirebaseDynamicLinks in Frameworks */ = {isa = PBXBuildFile; productRef = 3CB993D92C90AEF200B8DB7F /* FirebaseDynamicLinks */; };
+		3CB993DE2C90AEF200B8DB7F /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = 3CB993DD2C90AEF200B8DB7F /* FirebaseFunctions */; };
+		3CB993E02C90AEF200B8DB7F /* FirebaseFunctionsCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 3CB993DF2C90AEF200B8DB7F /* FirebaseFunctionsCombine-Community */; };
+		3CB993E22C90AEF200B8DB7F /* FirebaseInAppMessaging-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 3CB993E12C90AEF200B8DB7F /* FirebaseInAppMessaging-Beta */; };
+		3CB993E42C90AEF200B8DB7F /* FirebaseInstallations in Frameworks */ = {isa = PBXBuildFile; productRef = 3CB993E32C90AEF200B8DB7F /* FirebaseInstallations */; };
+		3CB993E62C90AEF200B8DB7F /* FirebaseMLModelDownloader in Frameworks */ = {isa = PBXBuildFile; productRef = 3CB993E52C90AEF200B8DB7F /* FirebaseMLModelDownloader */; };
+		3CB993E82C90AEF200B8DB7F /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 3CB993E72C90AEF200B8DB7F /* FirebaseMessaging */; };
+		3CB993EA2C90AEF200B8DB7F /* FirebasePerformance in Frameworks */ = {isa = PBXBuildFile; productRef = 3CB993E92C90AEF200B8DB7F /* FirebasePerformance */; };
+		3CB993EC2C90AEF200B8DB7F /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = 3CB993EB2C90AEF200B8DB7F /* FirebaseRemoteConfig */; };
+		3CB993EE2C90AEF200B8DB7F /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 3CB993ED2C90AEF200B8DB7F /* FirebaseStorageCombine-Community */; };
+		3CB993F02C90AEF200B8DB7F /* FirebaseVertexAI-Preview in Frameworks */ = {isa = PBXBuildFile; productRef = 3CB993EF2C90AEF200B8DB7F /* FirebaseVertexAI-Preview */; };
+		3CCD29462C800C3C000A03A7 /* JobSubmitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCD29442C7FFD4F000A03A7 /* JobSubmitView.swift */; };
+		3CCD294E2C8127DB000A03A7 /* ProposalItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCD294D2C8127DB000A03A7 /* ProposalItemView.swift */; };
+		3CCD29502C82A52C000A03A7 /* JobCompletionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCD294F2C82A52C000A03A7 /* JobCompletionView.swift */; };
+		3CCD29522C839A68000A03A7 /* ActiveJobsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCD29512C839A68000A03A7 /* ActiveJobsListView.swift */; };
+		3CCD29542C839ABB000A03A7 /* ContractItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCD29532C839ABB000A03A7 /* ContractItemView.swift */; };
+		3CCD29562C839B2D000A03A7 /* ProposalsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCD29552C839B2D000A03A7 /* ProposalsListView.swift */; };
+		3CCD29582C83A620000A03A7 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CCD29572C83A620000A03A7 /* Launch Screen.storyboard */; };
+		3CCF82402C8CD4AF00486F8D /* PackageDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCF823F2C8CD4AF00486F8D /* PackageDetailView.swift */; };
+		3CD2CD442C716EA500B5BEBB /* ZoomerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD2CD432C716EA500B5BEBB /* ZoomerApp.swift */; };
+		3CD2CD462C716EA500B5BEBB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD2CD452C716EA500B5BEBB /* ContentView.swift */; };
+		3CD2CD482C716EA500B5BEBB /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD2CD472C716EA500B5BEBB /* Item.swift */; };
+		3CD2CD4A2C716EA700B5BEBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CD2CD492C716EA700B5BEBB /* Assets.xcassets */; };
+		3CD2CD4D2C716EA700B5BEBB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CD2CD4C2C716EA700B5BEBB /* Preview Assets.xcassets */; };
+		3CD2CD572C716EA700B5BEBB /* ZoomerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD2CD562C716EA700B5BEBB /* ZoomerTests.swift */; };
+		3CD2CD612C716EA700B5BEBB /* ZoomerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD2CD602C716EA700B5BEBB /* ZoomerUITests.swift */; };
+		3CD2CD632C716EA700B5BEBB /* ZoomerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD2CD622C716EA700B5BEBB /* ZoomerUITestsLaunchTests.swift */; };
+		3CD2CD762C71717F00B5BEBB /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 3CD2CD752C71717F00B5BEBB /* FirebaseAnalytics */; };
+		3CD2CD782C71717F00B5BEBB /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 3CD2CD772C71717F00B5BEBB /* FirebaseAuth */; };
+		3CD2CD7A2C71717F00B5BEBB /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 3CD2CD792C71717F00B5BEBB /* FirebaseFirestore */; };
+		3CD2CD7C2C71717F00B5BEBB /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 3CD2CD7B2C71717F00B5BEBB /* FirebaseStorage */; };
+		3CD2CD7E2C72263E00B5BEBB /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD2CD7D2C72263E00B5BEBB /* SearchView.swift */; };
+		3CD2CD7F2C72263E00B5BEBB /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD2CD7D2C72263E00B5BEBB /* SearchView.swift */; };
+		3CD2CD802C72263E00B5BEBB /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD2CD7D2C72263E00B5BEBB /* SearchView.swift */; };
+		3CD2CD822C72265400B5BEBB /* VerifyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD2CD812C72265400B5BEBB /* VerifyView.swift */; };
+		3CD2CD832C72265400B5BEBB /* VerifyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD2CD812C72265400B5BEBB /* VerifyView.swift */; };
+		3CD2CD842C72265400B5BEBB /* VerifyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD2CD812C72265400B5BEBB /* VerifyView.swift */; };
+		3CD2CD862C72266700B5BEBB /* ContractsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD2CD852C72266700B5BEBB /* ContractsView.swift */; };
+		3CD2CD872C72266700B5BEBB /* ContractsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD2CD852C72266700B5BEBB /* ContractsView.swift */; };
+		3CD2CD882C72266700B5BEBB /* ContractsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD2CD852C72266700B5BEBB /* ContractsView.swift */; };
+		3CF09F182C8B5A0D00647954 /* EditAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF09F172C8B5A0D00647954 /* EditAccountView.swift */; };
+		3CF09F1A2C8B972100647954 /* AddPackageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF09F192C8B972100647954 /* AddPackageView.swift */; };
+		3CF09F1C2C8B987700647954 /* VideoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF09F1B2C8B987700647954 /* VideoPicker.swift */; };
+		3CF922CD2C7FEA4C00ECED60 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF922CC2C7FEA4C00ECED60 /* LoginView.swift */; };
+		3CF922D02C7FF0CE00ECED60 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD2CD892C72268200B5BEBB /* AccountView.swift */; };
+		3CFB35AD2C90C46D00B61E61 /* Stripe in Frameworks */ = {isa = PBXBuildFile; productRef = 3CFB35AC2C90C46D00B61E61 /* Stripe */; };
+		3CFB35AF2C90C46D00B61E61 /* StripeApplePay in Frameworks */ = {isa = PBXBuildFile; productRef = 3CFB35AE2C90C46D00B61E61 /* StripeApplePay */; };
+		3CFB35B12C90C46D00B61E61 /* StripeCardScan in Frameworks */ = {isa = PBXBuildFile; productRef = 3CFB35B02C90C46D00B61E61 /* StripeCardScan */; };
+		3CFB35B32C90C46D00B61E61 /* StripeFinancialConnections in Frameworks */ = {isa = PBXBuildFile; productRef = 3CFB35B22C90C46D00B61E61 /* StripeFinancialConnections */; };
+		3CFB35B52C90C46D00B61E61 /* StripeIdentity in Frameworks */ = {isa = PBXBuildFile; productRef = 3CFB35B42C90C46D00B61E61 /* StripeIdentity */; };
+		3CFB35B72C90C46E00B61E61 /* StripePaymentSheet in Frameworks */ = {isa = PBXBuildFile; productRef = 3CFB35B62C90C46E00B61E61 /* StripePaymentSheet */; };
+		3CFB35B92C90C46E00B61E61 /* StripePayments in Frameworks */ = {isa = PBXBuildFile; productRef = 3CFB35B82C90C46E00B61E61 /* StripePayments */; };
+		3CFB35BB2C90C46E00B61E61 /* StripePaymentsUI in Frameworks */ = {isa = PBXBuildFile; productRef = 3CFB35BA2C90C46E00B61E61 /* StripePaymentsUI */; };
+		3CFB35BD2C90ED0600B61E61 /* Zoomer.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3CFB35BC2C90ED0600B61E61 /* Zoomer.jpg */; };
+		3CFB35BF2C910F0C00B61E61 /*  CreatePaymentIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFB35BE2C910F0C00B61E61 /*  CreatePaymentIntent.swift */; };
+		3CFB35C12C91111F00B61E61 /* PaymentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFB35C02C91111F00B61E61 /* PaymentView.swift */; };
+		7E736F9E2CA3A062000DEB61 /* PostJobView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9E28C72C729AFE00D577C1 /* PostJobView.swift */; };
+		7E736F9F2CA3A062000DEB61 /* PostJobView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9E28C72C729AFE00D577C1 /* PostJobView.swift */; };
+		7E736FA62CA4F44D000DEB61 /* NotGoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7E736FA52CA4F44D000DEB61 /* NotGoogleService-Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3CD2CD532C716EA700B5BEBB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3CD2CD382C716EA500B5BEBB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3CD2CD3F2C716EA500B5BEBB;
+			remoteInfo = Zoomer;
+		};
+		3CD2CD5D2C716EA700B5BEBB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3CD2CD382C716EA500B5BEBB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3CD2CD3F2C716EA500B5BEBB;
+			remoteInfo = Zoomer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0470629F2C9F966E0022FA25 /* VoteManager.swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoteManager.swift.swift; sourceTree = "<group>"; };
+		047062C82CB06D120022FA25 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		049DB1742C9D1723001E8281 /* Proposal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Proposal.swift; sourceTree = "<group>"; };
+		049DB1762C9D1D3F001E8281 /* PaymentSetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentSetupView.swift; sourceTree = "<group>"; };
+		3C9E28BC2C728AAD00D577C1 /* JobListing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobListing.swift; sourceTree = "<group>"; };
+		3C9E28C02C728ADD00D577C1 /* saveJobListing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = saveJobListing.swift; sourceTree = "<group>"; };
+		3C9E28C42C728AFE00D577C1 /* getJobListing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getJobListing.swift; sourceTree = "<group>"; };
+		3C9E28C72C729AFE00D577C1 /* PostJobView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostJobView.swift; sourceTree = "<group>"; };
+		3C9E28C92C729B2A00D577C1 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		3C9E28CB2C729B9900D577C1 /* JobListingDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobListingDetailsView.swift; sourceTree = "<group>"; };
+		3C9E28CD2C729BD700D577C1 /* ProposalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProposalView.swift; sourceTree = "<group>"; };
+		3C9E28CF2C72A72F00D577C1 /* LocationPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPickerView.swift; sourceTree = "<group>"; };
+		3C9E28D12C72A81700D577C1 /* IdentifiableMapItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentifiableMapItem.swift; sourceTree = "<group>"; };
+		3C9E28D52C72BB4200D577C1 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		3C9E28D72C72BCE500D577C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CB416F92C95105B005DB275 /* startPaymentFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = startPaymentFlow.swift; sourceTree = "<group>"; };
+		3CCD29442C7FFD4F000A03A7 /* JobSubmitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobSubmitView.swift; sourceTree = "<group>"; };
+		3CCD294D2C8127DB000A03A7 /* ProposalItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProposalItemView.swift; sourceTree = "<group>"; };
+		3CCD294F2C82A52C000A03A7 /* JobCompletionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobCompletionView.swift; sourceTree = "<group>"; };
+		3CCD29512C839A68000A03A7 /* ActiveJobsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveJobsListView.swift; sourceTree = "<group>"; };
+		3CCD29532C839ABB000A03A7 /* ContractItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContractItemView.swift; sourceTree = "<group>"; };
+		3CCD29552C839B2D000A03A7 /* ProposalsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProposalsListView.swift; sourceTree = "<group>"; };
+		3CCD29572C83A620000A03A7 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		3CCF823F2C8CD4AF00486F8D /* PackageDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackageDetailView.swift; sourceTree = "<group>"; };
+		3CCF82442C8E75A600486F8D /* PaymentService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentService.swift; sourceTree = "<group>"; };
+		3CD2CD402C716EA500B5BEBB /* Zoomer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zoomer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CD2CD432C716EA500B5BEBB /* ZoomerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomerApp.swift; sourceTree = "<group>"; };
+		3CD2CD452C716EA500B5BEBB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3CD2CD472C716EA500B5BEBB /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		3CD2CD492C716EA700B5BEBB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3CD2CD4C2C716EA700B5BEBB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3CD2CD522C716EA700B5BEBB /* ZoomerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZoomerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CD2CD562C716EA700B5BEBB /* ZoomerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomerTests.swift; sourceTree = "<group>"; };
+		3CD2CD5C2C716EA700B5BEBB /* ZoomerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZoomerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CD2CD602C716EA700B5BEBB /* ZoomerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomerUITests.swift; sourceTree = "<group>"; };
+		3CD2CD622C716EA700B5BEBB /* ZoomerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3CD2CD7D2C72263E00B5BEBB /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		3CD2CD812C72265400B5BEBB /* VerifyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyView.swift; sourceTree = "<group>"; };
+		3CD2CD852C72266700B5BEBB /* ContractsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContractsView.swift; sourceTree = "<group>"; };
+		3CD2CD892C72268200B5BEBB /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		3CF09F172C8B5A0D00647954 /* EditAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditAccountView.swift; sourceTree = "<group>"; };
+		3CF09F192C8B972100647954 /* AddPackageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPackageView.swift; sourceTree = "<group>"; };
+		3CF09F1B2C8B987700647954 /* VideoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPicker.swift; sourceTree = "<group>"; };
+		3CF922CC2C7FEA4C00ECED60 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		3CFB35BC2C90ED0600B61E61 /* Zoomer.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Zoomer.jpg; sourceTree = "<group>"; };
+		3CFB35BE2C910F0C00B61E61 /*  CreatePaymentIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " CreatePaymentIntent.swift"; sourceTree = "<group>"; };
+		3CFB35C02C91111F00B61E61 /* PaymentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentView.swift; sourceTree = "<group>"; };
+		7E736FA52CA4F44D000DEB61 /* NotGoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "NotGoogleService-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3CD2CD3D2C716EA500B5BEBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CFB35B92C90C46E00B61E61 /* StripePayments in Frameworks */,
+				3CFB35AF2C90C46D00B61E61 /* StripeApplePay in Frameworks */,
+				3CB993EE2C90AEF200B8DB7F /* FirebaseStorageCombine-Community in Frameworks */,
+				3CFB35B52C90C46D00B61E61 /* StripeIdentity in Frameworks */,
+				3CB993DE2C90AEF200B8DB7F /* FirebaseFunctions in Frameworks */,
+				3CB993EA2C90AEF200B8DB7F /* FirebasePerformance in Frameworks */,
+				3CB993EC2C90AEF200B8DB7F /* FirebaseRemoteConfig in Frameworks */,
+				3CFB35AD2C90C46D00B61E61 /* Stripe in Frameworks */,
+				3CFB35BB2C90C46E00B61E61 /* StripePaymentsUI in Frameworks */,
+				3CD2CD762C71717F00B5BEBB /* FirebaseAnalytics in Frameworks */,
+				3CB993D42C90AEF200B8DB7F /* FirebaseAuthCombine-Community in Frameworks */,
+				3CB993CE2C90AEF200B8DB7F /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
+				3CD2CD7C2C71717F00B5BEBB /* FirebaseStorage in Frameworks */,
+				3CB993CC2C90AEF200B8DB7F /* FirebaseAnalyticsOnDeviceConversion in Frameworks */,
+				3CB993D02C90AEF200B8DB7F /* FirebaseAppCheck in Frameworks */,
+				3CFB35B32C90C46D00B61E61 /* StripeFinancialConnections in Frameworks */,
+				3CB993E82C90AEF200B8DB7F /* FirebaseMessaging in Frameworks */,
+				3CB993E42C90AEF200B8DB7F /* FirebaseInstallations in Frameworks */,
+				3CB993E02C90AEF200B8DB7F /* FirebaseFunctionsCombine-Community in Frameworks */,
+				3CD2CD782C71717F00B5BEBB /* FirebaseAuth in Frameworks */,
+				3CB993D62C90AEF200B8DB7F /* FirebaseCrashlytics in Frameworks */,
+				3CB993E22C90AEF200B8DB7F /* FirebaseInAppMessaging-Beta in Frameworks */,
+				3CB993D82C90AEF200B8DB7F /* FirebaseDatabase in Frameworks */,
+				3CFB35B12C90C46D00B61E61 /* StripeCardScan in Frameworks */,
+				3C95CE572C95313E0056EA81 /* FirebaseFirestoreCombine-Community in Frameworks */,
+				3CD2CD7A2C71717F00B5BEBB /* FirebaseFirestore in Frameworks */,
+				3CB993E62C90AEF200B8DB7F /* FirebaseMLModelDownloader in Frameworks */,
+				3CFB35B72C90C46E00B61E61 /* StripePaymentSheet in Frameworks */,
+				3CB993D22C90AEF200B8DB7F /* FirebaseAppDistribution-Beta in Frameworks */,
+				3CB993F02C90AEF200B8DB7F /* FirebaseVertexAI-Preview in Frameworks */,
+				3CB993DA2C90AEF200B8DB7F /* FirebaseDynamicLinks in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CD2CD4F2C716EA700B5BEBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CD2CD592C716EA700B5BEBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3C95CE552C95313E0056EA81 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3C9E28C62C728B3D00D577C1 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				3CCF823F2C8CD4AF00486F8D /* PackageDetailView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		3CCF82432C8E757D00486F8D /* Payments */ = {
+			isa = PBXGroup;
+			children = (
+				3CCF82442C8E75A600486F8D /* PaymentService.swift */,
+				3CFB35BE2C910F0C00B61E61 /*  CreatePaymentIntent.swift */,
+				3CFB35C02C91111F00B61E61 /* PaymentView.swift */,
+			);
+			path = Payments;
+			sourceTree = "<group>";
+		};
+		3CD2CD372C716EA500B5BEBB = {
+			isa = PBXGroup;
+			children = (
+				3CFB35BC2C90ED0600B61E61 /* Zoomer.jpg */,
+				3CCD29572C83A620000A03A7 /* Launch Screen.storyboard */,
+				3CD2CD422C716EA500B5BEBB /* Zoomer */,
+				3CD2CD552C716EA700B5BEBB /* ZoomerTests */,
+				3CD2CD5F2C716EA700B5BEBB /* ZoomerUITests */,
+				3CD2CD412C716EA500B5BEBB /* Products */,
+				3C95CE552C95313E0056EA81 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3CD2CD412C716EA500B5BEBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3CD2CD402C716EA500B5BEBB /* Zoomer.app */,
+				3CD2CD522C716EA700B5BEBB /* ZoomerTests.xctest */,
+				3CD2CD5C2C716EA700B5BEBB /* ZoomerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3CD2CD422C716EA500B5BEBB /* Zoomer */ = {
+			isa = PBXGroup;
+			children = (
+				7E736FA52CA4F44D000DEB61 /* NotGoogleService-Info.plist */,
+				047062C82CB06D120022FA25 /* GoogleService-Info.plist */,
+				7E736F972CA39D7F000DEB61 /* App */,
+				7E736F962CA39D72000DEB61 /* Models+Helper */,
+				7E736F952CA39D5A000DEB61 /* Core */,
+				3CCF82432C8E757D00486F8D /* Payments */,
+				3C9E28C62C728B3D00D577C1 /* Components */,
+				3C9E28C02C728ADD00D577C1 /* saveJobListing.swift */,
+				3C9E28C42C728AFE00D577C1 /* getJobListing.swift */,
+				3C9E28D12C72A81700D577C1 /* IdentifiableMapItem.swift */,
+				7E736F942CA39D37000DEB61 /* Resrouces */,
+				3CD2CD472C716EA500B5BEBB /* Item.swift */,
+				3CD2CD492C716EA700B5BEBB /* Assets.xcassets */,
+				3C9E28D72C72BCE500D577C1 /* Info.plist */,
+				3CD2CD4B2C716EA700B5BEBB /* Preview Content */,
+			);
+			path = Zoomer;
+			sourceTree = "<group>";
+		};
+		3CD2CD4B2C716EA700B5BEBB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3CD2CD4C2C716EA700B5BEBB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3CD2CD552C716EA700B5BEBB /* ZoomerTests */ = {
+			isa = PBXGroup;
+			children = (
+				3CD2CD562C716EA700B5BEBB /* ZoomerTests.swift */,
+			);
+			path = ZoomerTests;
+			sourceTree = "<group>";
+		};
+		3CD2CD5F2C716EA700B5BEBB /* ZoomerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3CD2CD602C716EA700B5BEBB /* ZoomerUITests.swift */,
+				3CD2CD622C716EA700B5BEBB /* ZoomerUITestsLaunchTests.swift */,
+			);
+			path = ZoomerUITests;
+			sourceTree = "<group>";
+		};
+		3CF922C92C7FEA0A00ECED60 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				3CD2CD892C72268200B5BEBB /* AccountView.swift */,
+				3CF922CC2C7FEA4C00ECED60 /* LoginView.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		7E736F942CA39D37000DEB61 /* Resrouces */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resrouces;
+			sourceTree = "<group>";
+		};
+		7E736F952CA39D5A000DEB61 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				7E736F9D2CA39EF2000DEB61 /* CardProcess */,
+				7E736F9C2CA39EED000DEB61 /* SearchView */,
+				7E736F9B2CA39EE6000DEB61 /* VerifyView */,
+				7E736F9A2CA39EDF000DEB61 /* ContractsView */,
+				7E736FA02CA3A1EF000DEB61 /* AccountView */,
+				3CF09F172C8B5A0D00647954 /* EditAccountView.swift */,
+				3CF09F192C8B972100647954 /* AddPackageView.swift */,
+				7E736FA12CA3A1FA000DEB61 /* PaymentView */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		7E736F962CA39D72000DEB61 /* Models+Helper */ = {
+			isa = PBXGroup;
+			children = (
+				0470629F2C9F966E0022FA25 /* VoteManager.swift.swift */,
+				049DB1742C9D1723001E8281 /* Proposal.swift */,
+				3C9E28BC2C728AAD00D577C1 /* JobListing.swift */,
+				3C9E28C92C729B2A00D577C1 /* ImagePicker.swift */,
+				3CB416F92C95105B005DB275 /* startPaymentFlow.swift */,
+				3CF09F1B2C8B987700647954 /* VideoPicker.swift */,
+			);
+			path = "Models+Helper";
+			sourceTree = "<group>";
+		};
+		7E736F972CA39D7F000DEB61 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				3CD2CD432C716EA500B5BEBB /* ZoomerApp.swift */,
+				3CD2CD452C716EA500B5BEBB /* ContentView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		7E736F9A2CA39EDF000DEB61 /* ContractsView */ = {
+			isa = PBXGroup;
+			children = (
+				3CD2CD852C72266700B5BEBB /* ContractsView.swift */,
+				3C9E28C72C729AFE00D577C1 /* PostJobView.swift */,
+				3C9E28CB2C729B9900D577C1 /* JobListingDetailsView.swift */,
+				3C9E28CD2C729BD700D577C1 /* ProposalView.swift */,
+				3CCD294D2C8127DB000A03A7 /* ProposalItemView.swift */,
+				3CCD29512C839A68000A03A7 /* ActiveJobsListView.swift */,
+				3CCD29532C839ABB000A03A7 /* ContractItemView.swift */,
+				3CCD29552C839B2D000A03A7 /* ProposalsListView.swift */,
+				3C9E28CF2C72A72F00D577C1 /* LocationPickerView.swift */,
+				3C9E28D52C72BB4200D577C1 /* LocationManager.swift */,
+				3CCD294F2C82A52C000A03A7 /* JobCompletionView.swift */,
+			);
+			path = ContractsView;
+			sourceTree = "<group>";
+		};
+		7E736F9B2CA39EE6000DEB61 /* VerifyView */ = {
+			isa = PBXGroup;
+			children = (
+				3CD2CD812C72265400B5BEBB /* VerifyView.swift */,
+			);
+			path = VerifyView;
+			sourceTree = "<group>";
+		};
+		7E736F9C2CA39EED000DEB61 /* SearchView */ = {
+			isa = PBXGroup;
+			children = (
+				3CD2CD7D2C72263E00B5BEBB /* SearchView.swift */,
+				3CCD29442C7FFD4F000A03A7 /* JobSubmitView.swift */,
+			);
+			path = SearchView;
+			sourceTree = "<group>";
+		};
+		7E736F9D2CA39EF2000DEB61 /* CardProcess */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CardProcess;
+			sourceTree = "<group>";
+		};
+		7E736FA02CA3A1EF000DEB61 /* AccountView */ = {
+			isa = PBXGroup;
+			children = (
+				3CF922C92C7FEA0A00ECED60 /* Authentication */,
+			);
+			path = AccountView;
+			sourceTree = "<group>";
+		};
+		7E736FA12CA3A1FA000DEB61 /* PaymentView */ = {
+			isa = PBXGroup;
+			children = (
+				7E736FA22CA3A21F000DEB61 /* Autehntication */,
+			);
+			path = PaymentView;
+			sourceTree = "<group>";
+		};
+		7E736FA22CA3A21F000DEB61 /* Autehntication */ = {
+			isa = PBXGroup;
+			children = (
+				049DB1762C9D1D3F001E8281 /* PaymentSetupView.swift */,
+			);
+			path = Autehntication;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3CD2CD3F2C716EA500B5BEBB /* Zoomer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CD2CD662C716EA700B5BEBB /* Build configuration list for PBXNativeTarget "Zoomer" */;
+			buildPhases = (
+				3CD2CD3C2C716EA500B5BEBB /* Sources */,
+				3CD2CD3D2C716EA500B5BEBB /* Frameworks */,
+				3CD2CD3E2C716EA500B5BEBB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Zoomer;
+			packageProductDependencies = (
+				3CD2CD752C71717F00B5BEBB /* FirebaseAnalytics */,
+				3CD2CD772C71717F00B5BEBB /* FirebaseAuth */,
+				3CD2CD792C71717F00B5BEBB /* FirebaseFirestore */,
+				3CD2CD7B2C71717F00B5BEBB /* FirebaseStorage */,
+				3CB993CB2C90AEF200B8DB7F /* FirebaseAnalyticsOnDeviceConversion */,
+				3CB993CD2C90AEF200B8DB7F /* FirebaseAnalyticsWithoutAdIdSupport */,
+				3CB993CF2C90AEF200B8DB7F /* FirebaseAppCheck */,
+				3CB993D12C90AEF200B8DB7F /* FirebaseAppDistribution-Beta */,
+				3CB993D32C90AEF200B8DB7F /* FirebaseAuthCombine-Community */,
+				3CB993D52C90AEF200B8DB7F /* FirebaseCrashlytics */,
+				3CB993D72C90AEF200B8DB7F /* FirebaseDatabase */,
+				3CB993D92C90AEF200B8DB7F /* FirebaseDynamicLinks */,
+				3CB993DD2C90AEF200B8DB7F /* FirebaseFunctions */,
+				3CB993DF2C90AEF200B8DB7F /* FirebaseFunctionsCombine-Community */,
+				3CB993E12C90AEF200B8DB7F /* FirebaseInAppMessaging-Beta */,
+				3CB993E32C90AEF200B8DB7F /* FirebaseInstallations */,
+				3CB993E52C90AEF200B8DB7F /* FirebaseMLModelDownloader */,
+				3CB993E72C90AEF200B8DB7F /* FirebaseMessaging */,
+				3CB993E92C90AEF200B8DB7F /* FirebasePerformance */,
+				3CB993EB2C90AEF200B8DB7F /* FirebaseRemoteConfig */,
+				3CB993ED2C90AEF200B8DB7F /* FirebaseStorageCombine-Community */,
+				3CB993EF2C90AEF200B8DB7F /* FirebaseVertexAI-Preview */,
+				3CFB35AC2C90C46D00B61E61 /* Stripe */,
+				3CFB35AE2C90C46D00B61E61 /* StripeApplePay */,
+				3CFB35B02C90C46D00B61E61 /* StripeCardScan */,
+				3CFB35B22C90C46D00B61E61 /* StripeFinancialConnections */,
+				3CFB35B42C90C46D00B61E61 /* StripeIdentity */,
+				3CFB35B62C90C46E00B61E61 /* StripePaymentSheet */,
+				3CFB35B82C90C46E00B61E61 /* StripePayments */,
+				3CFB35BA2C90C46E00B61E61 /* StripePaymentsUI */,
+				3C95CE562C95313E0056EA81 /* FirebaseFirestoreCombine-Community */,
+			);
+			productName = Zoomer;
+			productReference = 3CD2CD402C716EA500B5BEBB /* Zoomer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3CD2CD512C716EA700B5BEBB /* ZoomerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CD2CD692C716EA700B5BEBB /* Build configuration list for PBXNativeTarget "ZoomerTests" */;
+			buildPhases = (
+				3CD2CD4E2C716EA700B5BEBB /* Sources */,
+				3CD2CD4F2C716EA700B5BEBB /* Frameworks */,
+				3CD2CD502C716EA700B5BEBB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3CD2CD542C716EA700B5BEBB /* PBXTargetDependency */,
+			);
+			name = ZoomerTests;
+			productName = ZoomerTests;
+			productReference = 3CD2CD522C716EA700B5BEBB /* ZoomerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3CD2CD5B2C716EA700B5BEBB /* ZoomerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CD2CD6C2C716EA700B5BEBB /* Build configuration list for PBXNativeTarget "ZoomerUITests" */;
+			buildPhases = (
+				3CD2CD582C716EA700B5BEBB /* Sources */,
+				3CD2CD592C716EA700B5BEBB /* Frameworks */,
+				3CD2CD5A2C716EA700B5BEBB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3CD2CD5E2C716EA700B5BEBB /* PBXTargetDependency */,
+			);
+			name = ZoomerUITests;
+			productName = ZoomerUITests;
+			productReference = 3CD2CD5C2C716EA700B5BEBB /* ZoomerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3CD2CD382C716EA500B5BEBB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					3CD2CD3F2C716EA500B5BEBB = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					3CD2CD512C716EA700B5BEBB = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 3CD2CD3F2C716EA500B5BEBB;
+					};
+					3CD2CD5B2C716EA700B5BEBB = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 3CD2CD3F2C716EA500B5BEBB;
+					};
+				};
+			};
+			buildConfigurationList = 3CD2CD3B2C716EA500B5BEBB /* Build configuration list for PBXProject "Zoomer" */;
+			compatibilityVersion = "Xcode 15.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3CD2CD372C716EA500B5BEBB;
+			packageReferences = (
+				3CD2CD742C71717F00B5BEBB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				3CFB35AB2C90C46D00B61E61 /* XCRemoteSwiftPackageReference "stripe-ios" */,
+			);
+			productRefGroup = 3CD2CD412C716EA500B5BEBB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3CD2CD3F2C716EA500B5BEBB /* Zoomer */,
+				3CD2CD512C716EA700B5BEBB /* ZoomerTests */,
+				3CD2CD5B2C716EA700B5BEBB /* ZoomerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3CD2CD3E2C716EA500B5BEBB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E736FA62CA4F44D000DEB61 /* NotGoogleService-Info.plist in Resources */,
+				3CD2CD4D2C716EA700B5BEBB /* Preview Assets.xcassets in Resources */,
+				3CFB35BD2C90ED0600B61E61 /* Zoomer.jpg in Resources */,
+				3CCD29582C83A620000A03A7 /* Launch Screen.storyboard in Resources */,
+				047062C92CB06D120022FA25 /* GoogleService-Info.plist in Resources */,
+				3CD2CD4A2C716EA700B5BEBB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CD2CD502C716EA700B5BEBB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CD2CD5A2C716EA700B5BEBB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3CD2CD3C2C716EA500B5BEBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C9E28CA2C729B2A00D577C1 /* ImagePicker.swift in Sources */,
+				3CCD29542C839ABB000A03A7 /* ContractItemView.swift in Sources */,
+				3CFB35BF2C910F0C00B61E61 /*  CreatePaymentIntent.swift in Sources */,
+				3C9E28BD2C728AAD00D577C1 /* JobListing.swift in Sources */,
+				3CFB35C12C91111F00B61E61 /* PaymentView.swift in Sources */,
+				3C9E28CC2C729B9900D577C1 /* JobListingDetailsView.swift in Sources */,
+				047062A02C9F96720022FA25 /* VoteManager.swift.swift in Sources */,
+				3C9E28D22C72A81700D577C1 /* IdentifiableMapItem.swift in Sources */,
+				3CF09F182C8B5A0D00647954 /* EditAccountView.swift in Sources */,
+				3C9E28C12C728ADD00D577C1 /* saveJobListing.swift in Sources */,
+				3CD2CD7E2C72263E00B5BEBB /* SearchView.swift in Sources */,
+				3C9E28D02C72A72F00D577C1 /* LocationPickerView.swift in Sources */,
+				3CD2CD822C72265400B5BEBB /* VerifyView.swift in Sources */,
+				3CCD29562C839B2D000A03A7 /* ProposalsListView.swift in Sources */,
+				3CCF82402C8CD4AF00486F8D /* PackageDetailView.swift in Sources */,
+				3CCD29522C839A68000A03A7 /* ActiveJobsListView.swift in Sources */,
+				3CF09F1A2C8B972100647954 /* AddPackageView.swift in Sources */,
+				3C9E28D62C72BB4200D577C1 /* LocationManager.swift in Sources */,
+				3CD2CD462C716EA500B5BEBB /* ContentView.swift in Sources */,
+				3CD2CD482C716EA500B5BEBB /* Item.swift in Sources */,
+				3CCD29462C800C3C000A03A7 /* JobSubmitView.swift in Sources */,
+				3CCD294E2C8127DB000A03A7 /* ProposalItemView.swift in Sources */,
+				3C9E28CE2C729BD700D577C1 /* ProposalView.swift in Sources */,
+				3CB416FA2C95105B005DB275 /* startPaymentFlow.swift in Sources */,
+				3CF922D02C7FF0CE00ECED60 /* AccountView.swift in Sources */,
+				049DB1772C9D1D3F001E8281 /* PaymentSetupView.swift in Sources */,
+				3C9E28C82C729AFE00D577C1 /* PostJobView.swift in Sources */,
+				049DB1752C9D1723001E8281 /* Proposal.swift in Sources */,
+				3CD2CD862C72266700B5BEBB /* ContractsView.swift in Sources */,
+				3CD2CD442C716EA500B5BEBB /* ZoomerApp.swift in Sources */,
+				3CF922CD2C7FEA4C00ECED60 /* LoginView.swift in Sources */,
+				3CF09F1C2C8B987700647954 /* VideoPicker.swift in Sources */,
+				3CCD29502C82A52C000A03A7 /* JobCompletionView.swift in Sources */,
+				3C9E28C52C728AFE00D577C1 /* getJobListing.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CD2CD4E2C716EA700B5BEBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CD2CD832C72265400B5BEBB /* VerifyView.swift in Sources */,
+				3CD2CD7F2C72263E00B5BEBB /* SearchView.swift in Sources */,
+				3CD2CD872C72266700B5BEBB /* ContractsView.swift in Sources */,
+				7E736F9F2CA3A062000DEB61 /* PostJobView.swift in Sources */,
+				3CD2CD572C716EA700B5BEBB /* ZoomerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CD2CD582C716EA700B5BEBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CD2CD632C716EA700B5BEBB /* ZoomerUITestsLaunchTests.swift in Sources */,
+				3CD2CD802C72263E00B5BEBB /* SearchView.swift in Sources */,
+				7E736F9E2CA3A062000DEB61 /* PostJobView.swift in Sources */,
+				3CD2CD882C72266700B5BEBB /* ContractsView.swift in Sources */,
+				3CD2CD612C716EA700B5BEBB /* ZoomerUITests.swift in Sources */,
+				3CD2CD842C72265400B5BEBB /* VerifyView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3CD2CD542C716EA700B5BEBB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3CD2CD3F2C716EA500B5BEBB /* Zoomer */;
+			targetProxy = 3CD2CD532C716EA700B5BEBB /* PBXContainerItemProxy */;
+		};
+		3CD2CD5E2C716EA700B5BEBB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3CD2CD3F2C716EA500B5BEBB /* Zoomer */;
+			targetProxy = 3CD2CD5D2C716EA700B5BEBB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3CD2CD642C716EA700B5BEBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3CD2CD652C716EA700B5BEBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3CD2CD672C716EA700B5BEBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Zoomer/Preview Content\"";
+				DEVELOPMENT_TEAM = F8A5YKCK62;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Zoomer/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Zoomer;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need access to your camera to take photos for job completion.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location to show local job listings.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "We need access to your photo library to upload images for job completion.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zoomer.app.Zoomer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3CD2CD682C716EA700B5BEBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Zoomer/Preview Content\"";
+				DEVELOPMENT_TEAM = F8A5YKCK62;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Zoomer/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Zoomer;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need access to your camera to take photos for job completion.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location to show local job listings.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "We need access to your photo library to upload images for job completion.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zoomer.app.Zoomer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3CD2CD6A2C716EA700B5BEBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F8A5YKCK62;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zoomer.app.ZoomerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Zoomer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Zoomer";
+			};
+			name = Debug;
+		};
+		3CD2CD6B2C716EA700B5BEBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F8A5YKCK62;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zoomer.app.ZoomerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Zoomer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Zoomer";
+			};
+			name = Release;
+		};
+		3CD2CD6D2C716EA700B5BEBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F8A5YKCK62;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zoomer.app.ZoomerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Zoomer;
+			};
+			name = Debug;
+		};
+		3CD2CD6E2C716EA700B5BEBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F8A5YKCK62;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zoomer.app.ZoomerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Zoomer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3CD2CD3B2C716EA500B5BEBB /* Build configuration list for PBXProject "Zoomer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CD2CD642C716EA700B5BEBB /* Debug */,
+				3CD2CD652C716EA700B5BEBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3CD2CD662C716EA700B5BEBB /* Build configuration list for PBXNativeTarget "Zoomer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CD2CD672C716EA700B5BEBB /* Debug */,
+				3CD2CD682C716EA700B5BEBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3CD2CD692C716EA700B5BEBB /* Build configuration list for PBXNativeTarget "ZoomerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CD2CD6A2C716EA700B5BEBB /* Debug */,
+				3CD2CD6B2C716EA700B5BEBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3CD2CD6C2C716EA700B5BEBB /* Build configuration list for PBXNativeTarget "ZoomerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CD2CD6D2C716EA700B5BEBB /* Debug */,
+				3CD2CD6E2C716EA700B5BEBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3CD2CD742C71717F00B5BEBB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.0.0;
+			};
+		};
+		3CFB35AB2C90C46D00B61E61 /* XCRemoteSwiftPackageReference "stripe-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stripe/stripe-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 23.30.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3C95CE562C95313E0056EA81 /* FirebaseFirestoreCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3CD2CD742C71717F00B5BEBB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFirestoreCombine-Community";
+		};
+		3CB993CB2C90AEF200B8DB7F /* FirebaseAnalyticsOnDeviceConversion */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3CD2CD742C71717F00B5BEBB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsOnDeviceConversion;
+		};
+		3CB993CD2C90AEF200B8DB7F /* FirebaseAnalyticsWithoutAdIdSupport */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3CD2CD742C71717F00B5BEBB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsWithoutAdIdSupport;
+		};
+		3CB993CF2C90AEF200B8DB7F /* FirebaseAppCheck */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3CD2CD742C71717F00B5BEBB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAppCheck;
+		};
+		3CB993D12C90AEF200B8DB7F /* FirebaseAppDistribution-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3CD2CD742C71717F00B5BEBB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseAppDistribution-Beta";
+		};
+		3CB993D32C90AEF200B8DB7F /* FirebaseAuthCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3CD2CD742C71717F00B5BEBB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseAuthCombine-Community";
+		};
+		3CB993D52C90AEF200B8DB7F /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3CD2CD742C71717F00B5BEBB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		3CB993D72C90AEF200B8DB7F /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3CD2CD742C71717F00B5BEBB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		3CB993D92C90AEF200B8DB7F /* FirebaseDynamicLinks */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3CD2CD742C71717F00B5BEBB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDynamicLinks;
+		};
+		3CB993DD2C90AEF200B8DB7F /* FirebaseFunctions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3CD2CD742C71717F00B5BEBB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFunctions;
+		};
+		3CB993DF2C90AEF200B8DB7F /* FirebaseFunctionsCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3CD2CD742C71717F00B5BEBB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFunctionsCombine-Community";
+		};
+		3CB993E12C90AEF200B8DB7F /* FirebaseInAppMessaging-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3CD2CD742C71717F00B5BEBB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseInAppMessaging-Beta";
+		};
+		3CB993E32C90AEF200B8DB7F /* FirebaseInstallations */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3CD2CD742C71717F00B5BEBB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseInstallations;
+		};
+		3CB993E52C90AEF200B8DB7F /* FirebaseMLModelDownloader */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3CD2CD742C71717F00B5BEBB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMLModelDownloader;
+		};
+		3CB993E72C90AEF200B8DB7F /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3CD2CD742C71717F00B5BEBB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		3CB993E92C90AEF200B8DB7F /* FirebasePerformance */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3CD2CD742C71717F00B5BEBB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebasePerformance;
+		};
+		3CB993EB2C90AEF200B8DB7F /* FirebaseRemoteConfig */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3CD2CD742C71717F00B5BEBB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseRemoteConfig;
+		};
+		3CB993ED2C90AEF200B8DB7F /* FirebaseStorageCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3CD2CD742C71717F00B5BEBB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseStorageCombine-Community";
+		};
+		3CB993EF2C90AEF200B8DB7F /* FirebaseVertexAI-Preview */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3CD2CD742C71717F00B5BEBB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseVertexAI-Preview";
+		};
+		3CD2CD752C71717F00B5BEBB /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3CD2CD742C71717F00B5BEBB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		3CD2CD772C71717F00B5BEBB /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3CD2CD742C71717F00B5BEBB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		3CD2CD792C71717F00B5BEBB /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3CD2CD742C71717F00B5BEBB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		3CD2CD7B2C71717F00B5BEBB /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3CD2CD742C71717F00B5BEBB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		3CFB35AC2C90C46D00B61E61 /* Stripe */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3CFB35AB2C90C46D00B61E61 /* XCRemoteSwiftPackageReference "stripe-ios" */;
+			productName = Stripe;
+		};
+		3CFB35AE2C90C46D00B61E61 /* StripeApplePay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3CFB35AB2C90C46D00B61E61 /* XCRemoteSwiftPackageReference "stripe-ios" */;
+			productName = StripeApplePay;
+		};
+		3CFB35B02C90C46D00B61E61 /* StripeCardScan */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3CFB35AB2C90C46D00B61E61 /* XCRemoteSwiftPackageReference "stripe-ios" */;
+			productName = StripeCardScan;
+		};
+		3CFB35B22C90C46D00B61E61 /* StripeFinancialConnections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3CFB35AB2C90C46D00B61E61 /* XCRemoteSwiftPackageReference "stripe-ios" */;
+			productName = StripeFinancialConnections;
+		};
+		3CFB35B42C90C46D00B61E61 /* StripeIdentity */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3CFB35AB2C90C46D00B61E61 /* XCRemoteSwiftPackageReference "stripe-ios" */;
+			productName = StripeIdentity;
+		};
+		3CFB35B62C90C46E00B61E61 /* StripePaymentSheet */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3CFB35AB2C90C46D00B61E61 /* XCRemoteSwiftPackageReference "stripe-ios" */;
+			productName = StripePaymentSheet;
+		};
+		3CFB35B82C90C46E00B61E61 /* StripePayments */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3CFB35AB2C90C46D00B61E61 /* XCRemoteSwiftPackageReference "stripe-ios" */;
+			productName = StripePayments;
+		};
+		3CFB35BA2C90C46E00B61E61 /* StripePaymentsUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3CFB35AB2C90C46D00B61E61 /* XCRemoteSwiftPackageReference "stripe-ios" */;
+			productName = StripePaymentsUI;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 3CD2CD382C716EA500B5BEBB /* Project object */;
+}

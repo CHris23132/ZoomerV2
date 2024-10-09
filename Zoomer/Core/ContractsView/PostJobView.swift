@@ -17,103 +17,115 @@ struct PostJobView: View {
     @State private var isPosting: Bool = false
     @State private var showAlert: Bool = false
     @State private var alertMessage: String = ""
-    @State private var useCamera: Bool = false // Set to false for photo library by default
+    @State private var useCamera = false // Set to false for photo library by default
     
     private let categories = ["Labour Work", "Craft Labour", "Tech/IT", "Design", "Photo/Video/Arts"]
     private let geocoder = CLGeocoder()
     
     var body: some View {
         NavigationView {
-            VStack(spacing: 15) {
-                // MARK: - Job Title Input
-                TextField("Job Title", text: $title)
-                    .padding()
-                    .background(Color(.systemGray6))
-                    .cornerRadius(8)
-
-                // MARK: - Job Description Input
-                TextEditor(text: $description)
-                    .padding()
-                    .background(Color(.systemGray6))
-                    .cornerRadius(8)
-                    .frame(height: 150)
-
-                // MARK: - Category Picker
-                Picker("Category", selection: $selectedCategory) {
-                    ForEach(categories, id: \.self) { category in
-                        Text(category)
-                    }
-                }
-                .pickerStyle(SegmentedPickerStyle())
-                .padding()
-
-                // MARK: - Address Input
-                VStack(alignment: .leading) {
-                    Text("Address")
-                        .font(.headline)
-                    TextField("Enter Address", text: $address)
+            ScrollView { // Make the whole view scrollable
+                VStack(spacing: 15) {
+                    // MARK: - Job Title Input
+                    TextField("Job Title", text: $title)
                         .padding()
                         .background(Color(.systemGray6))
                         .cornerRadius(8)
-                }
-                .padding(.bottom)
+                        .autocorrectionDisabled(false) // Enable autocorrection
+                        .textInputAutocapitalization(.sentences) // Capitalize sentences
+                        .padding(.horizontal)
 
-                // MARK: - Location Picker Button
-                Button(action: {
-                    showLocationPicker.toggle()
-                }) {
-                    HStack {
-                        Image(systemName: "location.fill")
-                        Text("Set Location on Map")
+                    // MARK: - Job Description Input
+                    TextEditor(text: $description)
+                        .padding()
+                        .background(Color(.systemGray6))
+                        .cornerRadius(8)
+                        .frame(height: 150)
+                        .autocorrectionDisabled(false) // Enable autocorrection
+                        .textInputAutocapitalization(.sentences) // Capitalize sentences
+
+                    // MARK: - Category Picker
+                    Picker("Category", selection: $selectedCategory) {
+                        ForEach(categories, id: \.self) { category in
+                            Text(category)
+                        }
                     }
-                    .foregroundColor(.blue)
+                    .pickerStyle(SegmentedPickerStyle())
                     .padding()
-                    .background(Color.white)
-                    .cornerRadius(8)
-                }
-                .sheet(isPresented: $showLocationPicker) {
-                    LocationPickerView(selectedAddress: $address, selectedCoordinate: $selectedCoordinate)
-                }
 
-                // MARK: - Image Picker
-                Button(action: {
-                    showImagePicker.toggle()
-                }) {
-                    if let image = selectedImage {
-                        Image(uiImage: image)
-                            .resizable()
-                            .scaledToFit()
-                            .frame(height: 100)
+                    // MARK: - Address Input
+                    VStack(alignment: .leading) {
+                        Text("Address")
+                            .font(.headline)
+                        TextField("Enter Address", text: $address)
+                            .padding()
+                            .background(Color(.systemGray6))
                             .cornerRadius(8)
-                    } else {
+                            .autocorrectionDisabled(false) // Enable autocorrection
+                            .textInputAutocapitalization(.words) // Capitalize words
+                    }
+                    .padding(.bottom)
+
+                    // MARK: - Location Picker Button
+                    Button(action: {
+                        showLocationPicker.toggle()
+                    }) {
                         HStack {
-                            Image(systemName: "photo")
-                            Text("Add a Photo")
+                            Image(systemName: "location.fill")
+                            Text("Set Location on Map")
                         }
                         .foregroundColor(.blue)
                         .padding()
                         .background(Color.white)
                         .cornerRadius(8)
                     }
-                }
-                .sheet(isPresented: $showImagePicker) {
-                    ImagePicker(image: $selectedImage, useCamera: $useCamera)
-                }
+                    .sheet(isPresented: $showLocationPicker) {
+                        LocationPickerView(selectedAddress: $address, selectedCoordinate: $selectedCoordinate)
+                    }
 
-                // MARK: - Post Job Button
-                Button(action: {
-                    postJob()
-                }) {
-                    Text("Post Job")
-                        .frame(maxWidth: .infinity)
-                        .padding()
-                        .background(isPosting || title.isEmpty || description.isEmpty || address.isEmpty ? Color.gray : Color.blue)
-                        .foregroundColor(.white)
-                        .cornerRadius(8)
+                    // MARK: - Image Picker
+                    Button(action: {
+                        showImagePicker.toggle()
+                    }) {
+                        if let image = selectedImage {
+                            Image(uiImage: image)
+                                .resizable()
+                                .scaledToFit()
+                                .frame(height: 100)
+                                .cornerRadius(8)
+                        } else {
+                            HStack {
+                                Image(systemName: "photo")
+                                Text("Add a Photo")
+                            }
+                            .foregroundColor(.blue)
+                            .padding()
+                            .background(Color.white)
+                            .cornerRadius(8)
+                        }
+                    }
+                    .sheet(isPresented: $showImagePicker) {
+                        ImagePicker(image: $selectedImage, useCamera: $useCamera)
+                    }
+
+                    // MARK: - Post Job Button
+                    Button(action: {
+                        postJob()
+                    }) {
+                        Text("Post Job")
+                            .frame(maxWidth: .infinity)
+                            .padding()
+                            .background(isPosting || title.isEmpty || description.isEmpty || address.isEmpty ? Color.gray : Color.blue)
+                            .foregroundColor(.white)
+                            .cornerRadius(8)
+                    }
+                    .disabled(isPosting || title.isEmpty || description.isEmpty || address.isEmpty)
+                    .padding(.top, 20)
+
+                    Spacer()
                 }
-                .disabled(isPosting || title.isEmpty || description.isEmpty || address.isEmpty)
+                .padding()
             }
-            .padding()
             .navigationBarTitle("Post a Job", displayMode: .inline)
             .navigationBarItems(leading: Button("Cancel") {
                 presentationMode.wrappedValue.dismiss()
@@ -123,7 +135,7 @@ struct PostJobView: View {
             }
         }
     }
-
+    
     // MARK: - Post Job Logic
     private func postJob() {
         guard !title.isEmpty, !description.isEmpty, !address.isEmpty else { return }
@@ -204,7 +216,6 @@ struct PostJobView: View {
     }
     
     // MARK: - Image Upload Logic
-    // MARK: - Image Upload Logic
     private func uploadImage(_ image: UIImage, completion: @escaping (String?) -> Void) {
         let storageRef = Storage.storage().reference().child("job_images/\(UUID().uuidString).jpg")
         guard let imageData = image.jpegData(compressionQuality: 0.75) else { return }
@@ -212,14 +223,14 @@ struct PostJobView: View {
         storageRef.putData(imageData, metadata: nil) { metadata, error in
             if let error = error {
                 self.alertMessage = "Error uploading image: \(error.localizedDescription)"
-                DispatchQueue.main.async { self.showAlert = true }
+                self.showAlert = true
                 completion(nil)
                 return
             }
             storageRef.downloadURL { url, error in
                 if let error = error {
                     self.alertMessage = "Error getting image URL: \(error.localizedDescription)"
-                    DispatchQueue.main.async { self.showAlert = true }
+                    self.showAlert = true
                     completion(nil)
                     return
                 }
@@ -227,7 +238,6 @@ struct PostJobView: View {
             }
         }
     }
-
     
     // MARK: - Save Job Listing to Firestore
     private func saveToFirestore(_ jobListing: JobListing) {
@@ -243,3 +253,4 @@ struct PostJobView: View {
         self.isPosting = false
     }
 }
+

@@ -1,15 +1,13 @@
+// PackageDetailView.swift
+// Zoomer
 //
-//  PackageDetailView.swift
-//  Zoomer
-//
-//  Created by Christopher Walsh on 2024-09-07.
-//
+// Created by Christopher Walsh on 2024-09-07.
 
 import SwiftUI
 
 struct PackageDetailView: View {
     var package: Package
-    
+
     var body: some View {
         VStack(spacing: 20) {
             // Display the package image
@@ -28,18 +26,18 @@ struct PackageDetailView: View {
             } else {
                 Text("No Image Available")
             }
-            
+
             // Display package price
             Text("Price: $\(String(format: "%.2f", package.price))")
                 .font(.title2)
                 .fontWeight(.bold)
-            
+
             // Display package description
             Text(package.description)
                 .font(.body)
                 .padding()
                 .multilineTextAlignment(.center)
-            
+
             Spacer()
         }
         .padding()

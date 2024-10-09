@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "zoomertest-71b82"
-  }
+    "default": "zoomertest-71b82",
+    "production": "zoomer-bb879"
+  },
+  "targets": {},
+  "etags": {}
 }

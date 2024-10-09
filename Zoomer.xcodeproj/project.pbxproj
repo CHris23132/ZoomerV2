@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		045BE2042CB471F800FA14BB /* StripeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045BE2032CB471F800FA14BB /* StripeService.swift */; };
+		045BE2062CB5EB6F00FA14BB /* BankingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045BE2052CB5EB6F00FA14BB /* BankingView.swift */; };
+		045BE2082CB5EBE400FA14BB /* BankConnectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045BE2072CB5EBE400FA14BB /* BankConnectionView.swift */; };
+		045BE20A2CB5ED1F00FA14BB /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045BE2092CB5ED1F00FA14BB /* Package.swift */; };
 		047062A02C9F96720022FA25 /* VoteManager.swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0470629F2C9F966E0022FA25 /* VoteManager.swift.swift */; };
 		047062C92CB06D120022FA25 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 047062C82CB06D120022FA25 /* GoogleService-Info.plist */; };
 		049DB1752C9D1723001E8281 /* Proposal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049DB1742C9D1723001E8281 /* Proposal.swift */; };
@@ -109,6 +113,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		045BE2032CB471F800FA14BB /* StripeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StripeService.swift; sourceTree = "<group>"; };
+		045BE2052CB5EB6F00FA14BB /* BankingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankingView.swift; sourceTree = "<group>"; };
+		045BE2072CB5EBE400FA14BB /* BankConnectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankConnectionView.swift; sourceTree = "<group>"; };
+		045BE2092CB5ED1F00FA14BB /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		0470629F2C9F966E0022FA25 /* VoteManager.swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoteManager.swift.swift; sourceTree = "<group>"; };
 		047062C82CB06D120022FA25 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		049DB1742C9D1723001E8281 /* Proposal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Proposal.swift; sourceTree = "<group>"; };
@@ -236,6 +244,9 @@
 				3CCF82442C8E75A600486F8D /* PaymentService.swift */,
 				3CFB35BE2C910F0C00B61E61 /*  CreatePaymentIntent.swift */,
 				3CFB35C02C91111F00B61E61 /* PaymentView.swift */,
+				045BE2032CB471F800FA14BB /* StripeService.swift */,
+				045BE2052CB5EB6F00FA14BB /* BankingView.swift */,
+				045BE2072CB5EBE400FA14BB /* BankConnectionView.swift */,
 			);
 			path = Payments;
 			sourceTree = "<group>";
@@ -322,6 +333,7 @@
 		7E736F942CA39D37000DEB61 /* Resrouces */ = {
 			isa = PBXGroup;
 			children = (
+				045BE2092CB5ED1F00FA14BB /* Package.swift */,
 			);
 			path = Resrouces;
 			sourceTree = "<group>";
@@ -604,13 +616,16 @@
 				3CCD29542C839ABB000A03A7 /* ContractItemView.swift in Sources */,
 				3CFB35BF2C910F0C00B61E61 /*  CreatePaymentIntent.swift in Sources */,
 				3C9E28BD2C728AAD00D577C1 /* JobListing.swift in Sources */,
+				045BE20A2CB5ED1F00FA14BB /* Package.swift in Sources */,
 				3CFB35C12C91111F00B61E61 /* PaymentView.swift in Sources */,
 				3C9E28CC2C729B9900D577C1 /* JobListingDetailsView.swift in Sources */,
 				047062A02C9F96720022FA25 /* VoteManager.swift.swift in Sources */,
 				3C9E28D22C72A81700D577C1 /* IdentifiableMapItem.swift in Sources */,
 				3CF09F182C8B5A0D00647954 /* EditAccountView.swift in Sources */,
 				3C9E28C12C728ADD00D577C1 /* saveJobListing.swift in Sources */,
+				045BE2082CB5EBE400FA14BB /* BankConnectionView.swift in Sources */,
 				3CD2CD7E2C72263E00B5BEBB /* SearchView.swift in Sources */,
+				045BE2042CB471F800FA14BB /* StripeService.swift in Sources */,
 				3C9E28D02C72A72F00D577C1 /* LocationPickerView.swift in Sources */,
 				3CD2CD822C72265400B5BEBB /* VerifyView.swift in Sources */,
 				3CCD29562C839B2D000A03A7 /* ProposalsListView.swift in Sources */,
@@ -628,6 +643,7 @@
 				049DB1772C9D1D3F001E8281 /* PaymentSetupView.swift in Sources */,
 				3C9E28C82C729AFE00D577C1 /* PostJobView.swift in Sources */,
 				049DB1752C9D1723001E8281 /* Proposal.swift in Sources */,
+				045BE2062CB5EB6F00FA14BB /* BankingView.swift in Sources */,
 				3CD2CD862C72266700B5BEBB /* ContractsView.swift in Sources */,
 				3CD2CD442C716EA500B5BEBB /* ZoomerApp.swift in Sources */,
 				3CF922CD2C7FEA4C00ECED60 /* LoginView.swift in Sources */,
